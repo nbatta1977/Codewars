@@ -1,0 +1,20 @@
+# Reverse Words Kata
+
+def reverse_words(text):
+    
+    backwards = text[::-1]
+    print(backwards)
+
+    # First split the string into words:
+    words = backwards.split(' ')
+    print(words)
+     
+    # Next reverse the split string and join using a space:
+    reversed_sentence = ' '.join(reversed(words))
+         
+    # Debug print statement to see what's about to be returned:                            
+    print(reversed_sentence)
+                                 
+                                 
+    # Return the reversed sentence:
+    return reversed_sentence
