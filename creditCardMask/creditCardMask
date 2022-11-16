@@ -1,0 +1,23 @@
+# Credit Card Mask Kata
+def maskify(cc):
+    # Account for string shorter then 4 characters:
+    if len(cc) < 4:
+        return cc
+    
+    # If passed in string greater 4:
+    if len(cc) > 4:
+        secondPart = cc[-4:]
+        hidden = ""
+        count = 0
+        for char in cc[3:-1]:
+            hidden += "#"
+            count += 1
+        answer = hidden + secondPart 
+        
+        # Debug print statements
+        print(hidden)
+        print(secondPart)
+        print(answer)
+        
+        # Return statement
+        return answer

@@ -1,0 +1,33 @@
+def find_outlier(integers):
+    even = 0
+    odd = 0
+    for num in integers:
+        if num % 2 == 0:
+            even += 1
+
+        if num % 2 != 0:
+            odd += 1
+ 
+    if even < odd:
+        integersType = odd
+    if even > odd:
+        integersType = even
+  
+        
+    for number in integers:
+        if integersType == even:
+            if number % 2 != 0:
+                print(number)
+                return number
+
+        if integersType == odd:
+            if number % 2 == 0:
+                print(number)
+                return number
+
+                
+            
+        
+        
+        
+     
