@@ -1,0 +1,14 @@
+Codewars Break Camel Case Kata Solution:
+
+
+def solution(s):
+    # Define new empty string variable
+    new_string = ''
+    # Loop through passed in arguement and check if it's upper case 
+    for letter in s:
+        if letter.isupper():
+            new_string = new_string + ' ' + letter
+        else:
+            new_string = new_string + letter
+    # Return the new string
+    return new_string

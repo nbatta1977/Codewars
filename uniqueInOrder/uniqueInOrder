@@ -1,0 +1,35 @@
+Codewars Unique in Order Kata Solution:
+
+def unique_in_order(iterable):
+    # Account for an empty array:
+    if len(iterable) == 0:
+        return []
+    
+    # Set up needed variables for looping below:
+    length = len(iterable)
+    newLst = []
+    newLst.append(iterable[0])
+    # Set starting letter to equal the first element in the passed in array:
+    letter = iterable[0]
+    
+    # Loop through array arguement and check against letter.
+    # If it equals the letter, set letter to new value and do nothing:
+    for let in iterable:
+        if let == letter:
+            letter = let
+            continue
+            
+    # Loop through the array arguement and check against letter.
+    # If it doesn't equal the letter, append the value to the new list
+    # And set letter to new value
+        if let != iterable:
+            newLst.append(let)
+            letter = let
+    # Return the completed new list. 
+    return newLst
+            
+    
+    
+
+
+

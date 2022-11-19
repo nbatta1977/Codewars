@@ -1,3 +1,6 @@
+# Codewars To Find The Parity Value Kata Solution 
+
+# define the function and initialize the 2 variables we need:
 def find_outlier(integers):
     even = 0
     odd = 0

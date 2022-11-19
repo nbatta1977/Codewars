@@ -1,4 +1,7 @@
-# Credit Card Mask Kata
+# Codewars Credit Card Mask Kata Solution
+
+# Define the function and account for string shorter then 4 characters:
+
 def maskify(cc):
     # Account for string shorter then 4 characters:
     if len(cc) < 4:
@@ -13,11 +16,6 @@ def maskify(cc):
             hidden += "#"
             count += 1
         answer = hidden + secondPart 
-        
-        # Debug print statements
-        print(hidden)
-        print(secondPart)
-        print(answer)
         
         # Return statement
         return answer

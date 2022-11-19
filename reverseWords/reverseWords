@@ -1,4 +1,4 @@
-# Reverse Words Kata
+# Codewars Reverse Words Kata Solution
 
 def reverse_words(text):
     
